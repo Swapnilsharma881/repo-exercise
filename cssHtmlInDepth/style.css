@@ -2,23 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'gilroy';
+    font-family: 'Lato', sans-serif;
 }
 
 html , body {
     height: 100%;
     width: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
 #main {
 }
 
 #page1 {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #EFEAE3;
 }
 
-#page1 > nav {
+#page1  nav {
     width: 100%;
     display: flex;
     align-items: center;
@@ -26,14 +27,41 @@ html , body {
     padding: 3vw 3vw 0vw 3vw;
 }
 
-#navlink {
+#navLink {
     display: flex;
     align-items: center;
     gap: 3vw;
 }
 
-#navlink > h4 {
+#navLink h4 {
     padding: 10px 20px;
-    border: 1px solid rgba(153, 150, 150, 0.271);
+    border: 1px solid rgb(8, 8, 8);
     border-radius: 50px;
+    font-weight: 1000;
+    position: relative;
+}
+#navLink h4::after{
+    position: absolute;
+    content:"";
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    bottom: -100%;
+    border-radius: 10px;
+    transition: .4s;
+    background-color: black;
+    
+}
+
+#navLink h4:hover::after{
+    bottom: 0%;
+    background-color: black;
+}
+
+#navLink h4 a {
+    text-decoration: none;
+    
+}
+#navLink h4 a:hover {
+
 }
