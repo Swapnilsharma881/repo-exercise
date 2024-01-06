@@ -1,67 +1,157 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
-html , body {
-    height: 100%;
-    width: 100%;
-    font-family: 'Lato', sans-serif;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Lato", sans-serif;
 }
 
 #main {
 }
 
 #page1 {
-    min-height: 100vh;
-    background-color: #EFEAE3;
+  /* position: relative;
+    background-color: #EFEAE3; */
+
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  position: relative;
+  padding: 0 2vw;
 }
 
-#page1  nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3vw 3vw 0vw 3vw;
+#page1 nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 3vw 0vw 3vw;
 }
 
 #navLink {
-    display: flex;
-    align-items: center;
-    gap: 3vw;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
 }
 
 #navLink h4 {
-    padding: 10px 20px;
-    border: 1px solid rgb(8, 8, 8);
-    border-radius: 50px;
-    font-weight: 1000;
-    position: relative;
-}
-#navLink h4::after{
-    position: absolute;
-    content:"";
-    height: 100%;
-    width: 100%;
-    left: 0%;
-    bottom: -100%;
-    border-radius: 10px;
-    transition: .4s;
-    background-color: black;
-    
+  padding: 10px 20px;
+  border: 1px solid rgb(151, 146, 146);
+  border-radius: 50px;
+  font-weight: 1500;
+  position: relative;
+  overflow: hidden;
 }
 
-#navLink h4:hover::after{
-    bottom: 0%;
-    background-color: black;
+#navLink h4::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  bottom: -100%;
+  border-radius: 50px;
+  transition: 0.4s;
+  background-color: black;
+}
+
+#navLink h4:hover::after {
+  content: "";
+  text-align: center;
+  color: white;
+  bottom: 0%;
+  background-color: rgba(17, 17, 17, 0.849);
 }
 
 #navLink h4 a {
-    text-decoration: none;
+  color: #000000bb;
+  text-decoration: none;
+  position: relative;
+  z-index: 9;
+}
+
+#navLink h4:hover a {
+  text-decoration: none;
+  color: rgb(253, 253, 253);
+}
+
+#center {
+  /* position: absolute;
+    background-color: #94584ca6;
+    width:100%;
+    height: 100vh;
+    margin:30px; */
+  height: 80vh;
+  width: 100%;
+  /* background-color: orange; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #0000003c;
+  padding-bottom: 2.5vw;
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+#center h1 {
+    font-size: 10vw;
+    text-align: right;
+    line-height: 8vw;
+    font-weight: bold;
+}
+
+#video {
+    height: 100%;
+    width: 100%;
+    padding-top: 2.5vw;
     
 }
-#navLink h4 a:hover {
+
+#video video{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    
+}
+
+#page2 {
+  
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  position: relative;
+  padding: 0 2vw;
+}
+
+#movingText {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#movingText .dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #FE320A;
+    margin: 1vw 2vw;
 
 }
+
+#movingText .text {
+    font-size: 50px;
+    display: inline-block;
+}
+
